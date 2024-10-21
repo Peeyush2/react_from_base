@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML5 Boilerplate</title>
+  </head>
+
+  <body>
+    <h1>Page Title2</h1>
+    <div id="test"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+      const profile = /*#__PURE__*/ React.createElement(
+        "div",
+        null,
+        /*#__PURE__*/ React.createElement("h1", null, "Hello From React")
+      );
+      const testId = document.getElementById("test");
+      const y = ReactDOM.createRoot(testId);
+      y.render(profile);
+    </script>
+  </body>
+</html>
